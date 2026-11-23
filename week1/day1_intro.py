@@ -1,0 +1,10 @@
+name = input("enter your name ")
+age = int(input("Enter your age "))
+city = input("Enter your city")
+score1 = float(input("Enter your first test score:"))
+score2 = float(input("Enter your second test score:"))
+average = (score1 + score2)/ 2
+print(f"\n Hello, {name} from {city}")
+print(f"Age : {age} ({type(age).__name__}),average score:{average}")
+print(f"Score types : {type(score1).__name__},{type(score2).__name__}")
+print("Pass!" if average >= 60 else "Keep practising - you'll get there.")
